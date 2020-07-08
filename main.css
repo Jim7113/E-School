@@ -37,7 +37,17 @@ header{
 
 #signup{
     color: white;
-    background-color: #21B573;
+    background-image: linear-gradient(45deg, lightskyblue, lightseagreen);
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+}
+
+#signup:hover{
+    color: white;
+    background-image: linear-gradient(45deg, lightgreen, #21B573);
     width: 100px;
     padding: 10px 20px;
     border-radius: 20px;
@@ -51,6 +61,13 @@ header{
 
 .top-head img{
     margin: 75px 15px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.top-head img:hover{
+    transform: rotateY(180deg);
 }
 
 #ready-txt{
@@ -166,4 +183,16 @@ footer h5,footer small{
 
 .blog .card-title{
     color: #21B573;
+}
+
+#head-content{
+    position: relative;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide{
+    0%{left: -1000px;}
+    100%{left: 0;}
 }
